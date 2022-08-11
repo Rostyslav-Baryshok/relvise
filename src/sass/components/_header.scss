@@ -1,0 +1,42 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  // .header__container
+  &__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+  }
+  // .header__logo
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
+  }
+  // .header__menu
+  &__menu {
+    margin-left: 133px;
+  }
+}
+
+.menu {
+  // .menu__list
+  &__list {
+    display: flex;
+  }
+  // .menu__item
+  &__item {
+    &:not(:last-child) {
+      margin-right: 21px;
+    }
+  }
+  // .menu__link
+  &__link {
+    font-weight: 600;
+    line-height: 1.7;
+    color: $secondary-color;
+  }
+}
