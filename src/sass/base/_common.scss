@@ -16,13 +16,20 @@ html {
   font-weight: 500;
   color: $main-color;
 }
+main {
+  flex: 1 1 auto;
+}
 .wrapper {
   min-width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 ._container {
-  max-width: 1180px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
 }
 
 h1,
