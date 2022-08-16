@@ -56,6 +56,13 @@ main {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+
+    @media (max-width: 992.98px) {
+      font-size: 35px;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 30px;
+    }
   }
   // .header-block__sub-title
   &__sub-title {
