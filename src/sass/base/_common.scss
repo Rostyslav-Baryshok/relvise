@@ -15,6 +15,7 @@ html {
   font-size: 14px;
   font-weight: 500;
   color: $main-color;
+  background-color: $background-color;
 }
 main {
   flex: 1 1 auto;
@@ -41,6 +42,25 @@ main {
   top: 0;
   left: 0;
   object-fit: cover;
+}
+
+.header-block {
+  text-align: center;
+  line-height: 1.42;
+  letter-spacing: 0.2px;
+  // .header-block__title
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  // .header-block__sub-title
+  &__sub-title {
+    color: $secondary-color;
+  }
 }
 
 h1,
