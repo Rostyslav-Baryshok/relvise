@@ -1,0 +1,17 @@
+.clients {
+  padding: 58px 0;
+  // .clients__container
+  &__container {
+  }
+  // .clients__items
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  // .clients__item
+  &__item {
+    flex: 0 1 16.6667%;
+    text-align: center;
+  }
+}
