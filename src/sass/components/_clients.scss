@@ -1,5 +1,5 @@
 .clients {
-  padding: 58px 0;
+  padding: 50px 0;
   // .clients__container
   &__container {
   }
@@ -8,10 +8,23 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
   // .clients__item
   &__item {
+    padding: 8px 15px;
     flex: 0 1 16.6667%;
     text-align: center;
+    min-width: 140px;
+
+    & img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .clients {
+    padding: 30px 0;
   }
 }
