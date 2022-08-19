@@ -44,6 +44,15 @@ main {
   object-fit: cover;
 }
 
+.page {
+  // .page__clients
+  &__clients {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
 .header-block {
   text-align: center;
   line-height: 1.42;
