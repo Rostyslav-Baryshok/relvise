@@ -1,1 +1,110 @@
+.footer {
+  // .footer__top
+  &__top {
+    padding: 50px 0;
+    background-color: $background-two-color;
+  }
+  // .footer__main
+  &__main {
+  }
+  // .footer__row
+  &__row {
+    display: flex;
+    margin: 0 -15px;
+  }
 
+  // .footer__column
+  &__column {
+    margin: 0 15px;
+    flex: 0 1 20%;
+  }
+  // .footer__label
+  &__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: $secondary-light-color;
+  }
+  // .footer__menu
+  &__menu {
+  }
+  // .footer__contacts
+  &__contacts {
+  }
+  // .footer__button
+  &__button {
+  }
+  // .footer__container
+  &__container {
+  }
+  // .footer__copy
+  &__copy {
+  }
+  // .footer__social
+  &__social {
+  }
+}
+
+.menu-footer {
+  // .menu-footer__list
+  &__list {
+  }
+  // .menu-footer__item
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  // .menu-footer__link
+  &__link {
+    display: inline-block;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    color: $secondary-light-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+  // .contacts-footer__item
+  &__item {
+    padding-left: 34px;
+    line-height: 1.42;
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    color: $secondary-light-color;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+
+    // .contacts-footer__item_phone
+    &_phone {
+      background: url(../images/footer/phone-blue.svg) left no-repeat;
+    }
+    // .contacts-footer__item_map
+    &_map {
+      background: url(../images/footer/location-blue.svg) left no-repeat;
+    }
+    // .contacts-footer__item_email
+    &_email {
+      background: url(../images/footer/message-blue.svg) left no-repeat;
+    }
+  }
+}
+
+.social {
+  // .social__item
+  &__item {
+  }
+}
