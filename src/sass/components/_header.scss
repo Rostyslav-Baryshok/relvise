@@ -49,5 +49,9 @@
     font-weight: 600;
     line-height: 1.7;
     color: $secondary-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

@@ -86,6 +86,10 @@
       color: $accent-color;
       background-color: $background-btn;
       border: solid 1px $accent-color;
+
+      &:hover {
+        background-color: #21212154;
+      }
     }
   }
   // .hero__image
