@@ -1,0 +1,33 @@
+.contacts {
+  padding-top: 80px;
+  padding-bottom: 135px;
+  // .contacts__container
+  &__container {
+  }
+  // .contacts__header
+  &__header {
+    margin-bottom: 80px;
+  }
+  // .contacts__items
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+  // .contacts__item
+  &__item {
+  }
+}
+.item-contacts {
+  // .item-contacts__icon
+  &__icon {
+  }
+  // .item-contacts__email
+  &__email {
+  }
+  // .item-contacts__label
+  &__label {
+  }
+  // .item-contacts__button
+  &__button {
+  }
+}
