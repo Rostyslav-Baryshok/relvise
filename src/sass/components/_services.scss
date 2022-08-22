@@ -75,10 +75,10 @@
   background-color: $accent-color;
 }
 .services__item:hover .item-service__title {
-  color: #fff;
+  color: $secondary-light-color;
 }
 .services__item:hover .item-service__text {
-  color: #fff;
+  color: $secondary-light-color;
 }
 .services__item:hover .item-service__svg {
   fill: $secondary-light-color;

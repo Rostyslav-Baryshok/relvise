@@ -26,6 +26,7 @@
   align-items: center;
   padding: 50px 15px;
   background-color: $secondary-light-color;
+  transition: all 0.3s ease 0s;
 
   & > *:not(:last-child) {
     margin-bottom: 15px;
@@ -33,6 +34,11 @@
   // .item-contacts__icon
   &__icon {
   }
+  // .item-contacts__svg
+  &__svg {
+    fill: $accent-color;
+  }
+
   // .item-contacts__email
   &__emails {
     display: flex;
@@ -45,7 +51,7 @@
     color: inherit;
     font-weight: 600;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 14px;
 
     &:hover {
       text-decoration: underline;
@@ -73,15 +79,14 @@
     transition: all 0.3s ease 0s;
 
     &:hover {
-      color: $secondary-light-color;
-      background-color: $main-color-btn;
+      background-color: $background-two-btn;
     }
   }
 }
 
 @media (min-width: 1200px) {
   .item-contacts {
-    min-width: 370px;
+    min-width: 330px;
   }
 }
 @media (min-width: 910px) {
@@ -108,4 +113,23 @@
   .contacts__header {
     margin-bottom: 30px;
   }
+}
+
+///////////// hover services carts
+.item-contacts:hover {
+  background-color: $background-three-color;
+  transform: scale(1.1);
+}
+.item-contacts:hover .item-contacts__email {
+  color: $secondary-light-color;
+}
+.item-contacts:hover .item-contacts__label {
+  color: $secondary-light-color;
+}
+.item-contacts:hover .item-contacts__svg {
+  fill: $secondary-light-color;
+}
+.item-contacts:hover .item-contacts__button {
+  border-color: $secondary-light-color;
+  color: $secondary-light-color;
 }

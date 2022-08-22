@@ -4,7 +4,7 @@ $(window).scroll(function () {
   $('#counter').each(function () {
     let cPos = $(this).offset().top,
       topWindow = $(window).scrollTop();
-    if (cPos < topWindow + 550) {
+    if (cPos < topWindow + 500) {
       if (cc < 2) {
         $('.number').addClass('viz');
         $('div').each(function () {
