@@ -1,6 +1,7 @@
 .services {
   position: relative;
   margin-top: -111px;
+  z-index: 3;
   // .services__container
   &__container {
   }
@@ -36,6 +37,7 @@
     padding: 35px;
     background-color: $secondary-light-color;
     box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease 0s;
 
     @media (max-width: 479.98px) {
       padding: 25px;
@@ -46,6 +48,11 @@
   // .item-service__icon
   &__icon {
   }
+  // .item-service__svg
+  &__svg {
+    fill: $accent-color;
+  }
+
   // .item-service__title
   &__title {
     font-weight: 700;
@@ -63,12 +70,16 @@
   margin-bottom: 10px;
 }
 
-.item-service_green {
+///////////// hover services carts
+.services__item:hover {
   background-color: $accent-color;
 }
-.item-service_green .item-service__title {
-  color: $secondary-light-color;
+.services__item:hover .item-service__title {
+  color: #fff;
 }
-.item-service_green .item-service__text {
-  color: $secondary-light-color;
+.services__item:hover .item-service__text {
+  color: #fff;
+}
+.services__item:hover .item-service__svg {
+  fill: $secondary-light-color;
 }
