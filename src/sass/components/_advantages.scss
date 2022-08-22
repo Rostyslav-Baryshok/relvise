@@ -55,10 +55,23 @@
     align-items: flex-end;
     justify-content: center;
   }
+  // .advantages__wrap
+  &__wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .advantages__decor
+  &__decor {
+    font-size: 40px;
+  }
   // .advantages__value
   &__value {
     font-size: 40px;
     line-height: 1.42;
+    padding-right: 5px;
   }
   // .advantages__text
   &__text {
