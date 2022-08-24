@@ -9,6 +9,9 @@
     display: flex;
     min-height: 75px;
     align-items: center;
+    @media (min-width: 768px) {
+      min-height: 90px;
+    }
   }
   // .header__logo
   &__logo {
@@ -51,11 +54,11 @@
   }
 }
 
-////////////
-.header__open-menu {
+/////////////////////
+.header__button_menu {
   @media screen and (max-width: 767.98px) {
     position: absolute;
-    top: 25px;
+    top: 28px;
     right: 25px;
     background-color: inherit;
     border: none;
