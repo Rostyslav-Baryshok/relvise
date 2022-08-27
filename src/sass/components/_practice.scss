@@ -28,6 +28,27 @@
     padding: 0 20px;
     flex: 0 1 25%;
 
+    transform: translate(0px, 100%);
+    transition: all 0.9s ease 0s;
+    opacity: 0;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      &._active {
+        transform: translate(0px, 0px);
+        transition: all 0.9s ease 0.1s;
+        opacity: 1;
+      }
+    }
+    &:nth-child(2),
+    &:nth-child(4) {
+      &._active {
+        transform: translate(0px, 0px);
+        transition: all 0.9s ease 0.2s;
+        opacity: 1;
+      }
+    }
+
     @media (max-width: 1040.98px) {
       flex: 0 1 50%;
     }

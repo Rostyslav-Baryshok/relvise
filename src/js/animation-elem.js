@@ -7,7 +7,7 @@ if (animItems.length > 0) {
       const animItem = animItems[index];
       const animItemHeight = animItem.offsetHeight;
       const animItemOffset = offset(animItem).top;
-      const animStart = 4;
+      const animStart = 5;
 
       let animItemPoint = window.innerHeight - animItemHeight / animStart;
       if (animItemHeight > window.innerHeight) {
@@ -33,7 +33,9 @@ if (animItems.length > 0) {
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
   }
 
-  setTimeout(() => {
-    animOnScroll();
-  }, 300);
+  animOnScroll();
+
+  // setTimeout(() => {
+  //   animOnScroll();
+  // }, 200);
 }
