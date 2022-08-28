@@ -39,10 +39,7 @@
   top: 28px;
   right: 25px;
   background-color: transparent;
-  &:hover,
-  &:focus {
-    border: 50%;
-  }
+  stroke: $secondary-light-color;
 }
 .mobile-menu__item {
   height: 45px;
